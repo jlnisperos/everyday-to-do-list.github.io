@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="settings-page">
+    <div class="celestial-crop">
+        <img class="celestial-body" id="celestialBody" src="sun.png" alt="" aria-hidden="true">
+    </div>
+
+    <div class="page-content">
+        <header>
+            <h1>Settings</h1>
+        </header>
+
+        <section class="settings">
+            <div class="setting-row">
+                <label for="timerDec">Change Timer Count</label>
+                <div class="stepper">
+                    <button class="stepper-btn" id="timerDec" aria-label="Decrease timer">&lt;</button>
+                    <span class="stepper-value" id="timerSettingDisplay">25:00</span>
+                    <button class="stepper-btn" id="timerInc" aria-label="Increase timer">&gt;</button>
+                </div>
+            </div>
+
+            <div class="setting-row">
+                <label for="themeDec">Change Theme</label>
+                <div class="stepper">
+                    <button class="stepper-btn" id="themeDec" aria-label="Previous theme">&lt;</button>
+                    <span class="stepper-value theme-icon" id="themeSettingDisplay"></span>
+                    <button class="stepper-btn" id="themeInc" aria-label="Next theme">&gt;</button>
+                </div>
+            </div>
+
+            <div class="setting-row">
+                <label for="brightnessDec">Toggle Brightness</label>
+                <div class="stepper">
+                    <button class="stepper-btn" id="brightnessDec" aria-label="Decrease brightness">&lt;</button>
+                    <span class="stepper-value" id="brightnessDisplay">80%</span>
+                    <button class="stepper-btn" id="brightnessInc" aria-label="Increase brightness">&gt;</button>
+                </div>
+            </div>
+
+            <button class="back-btn" onclick="window.location.href='list-n-timer.html'">Back</button>
+        </section>
+    </div>
+
+    <footer>
+        <hr>
+        <p>Made by Group 4 - DW01</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="list-page">
+    <div class="page-content">
+        <header>
+            <h1>Everyday To-Do List</h1>
+        </header>
+    </div>
+
+    <nav>
+        <ul class="navbar">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="settings.html">Settings</a></li>
+        </ul>
+    </nav>
+
+    <img class="celestial-body celestial-full" id="celestialBody" src="sun.png" alt="" aria-hidden="true">
+
+    <div class="page-content">
+        <div class="task-section">
+            <div class="task-pill">
+                <button id="addBtn" class="add-task-btn">Add Task</button>
+                <input type="text" id="taskInput" placeholder="Add your task (i.e., feed the dog, do the laundry...)">
+            </div>
+            <ul id="taskList"></ul>
+        </div>
+
+        <div class="pomodoro-section">
+            <h2>Pomodoro Timer</h2>
+            <div id="timer">25:00</div>
+            <div class="pomodoro-buttons">
+                <button class="btn-start" onclick="startTimer()">Start</button>
+                <button class="btn-pause" onclick="pauseTimer()">Pause</button>
+                <button class="btn-reset" onclick="resetTimer()">Reset</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <hr>
+        <p>Made by Group 4 - DW01</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
